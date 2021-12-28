@@ -1,4 +1,4 @@
 FILE_NAME [*.a-zA-Z0-9]
 ANY_DATE %{MONTHDAY}/%{MONTH}/%{YEAR}:%{TIME}
 EXP_STR %{IP:client},\[%{ANY_DATE:logdate},%{WORD:method} %{URIPATHPARAM:uri} %{WORD:protocol}/%{NUMBER:version},%{NUMBER:answer}
-UNEXP_STR %{WORD:operator}:,%{WORD:verb},\'%{FILE_NAME:filename}\':,%{WORD:answer}
+UN_STR %{WORD:operator}:,%{WORD:verb},\'%{FILE_NAME:filename}\':,%{WORD:answer}
